@@ -1,0 +1,67 @@
+.login{
+    background-color: blue;
+    height:100vh;
+}
+.login-button-icon{
+    font-size: 3em;
+}
+.login-button{
+    position: absolute;
+    right:0;
+    top:180px;
+    border-radius: 100%;
+    padding: 10px;
+    background-color: lightgreen !important;
+    margin-right:15px;
+    z-index: 1;
+    cursor: pointer;
+}
+.login-button-big{
+    color:white;
+    margin-top: 50px;
+    text-align: center;
+    background-color: #33cc47;
+    padding:20px;
+    cursor: pointer;
+}
+.login-container{
+    padding-top: 10px;
+    padding-bottom: 40px;
+    background-color: white;
+    margin-top:20px; 
+}
+.social-icon{
+    font-size: 3em;
+}
+.social-icon.g{
+    color:red;
+}
+.social-icon.fb{
+    color:#4267B2;
+}
+.social-icon.tw{
+    color:#1DA1F2;
+}
+.social-icons-container{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-around;
+}
+.prijavise-button-container{
+    color:white;
+    margin-top: 50px;
+    text-align: center;
+    background-color: #c41d44;
+    padding:20px;
+    cursor: pointer;
+}
+@media (min-width:768px) {
+    .login-button { 
+        display:none;
+     }
+  }
+  @media (max-width:768px) {
+    .login-button-big { 
+        display:none;
+     }
+  }

@@ -1,0 +1,145 @@
+.search-route-button{
+    border: 0px solid black ;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.06), 0 2px 15px 0 rgba(0,0,0,.06);
+    background: white;
+    margin-left: 5px;
+    font-size: 3em;
+}
+.bus-icon{
+    font-size: 3em;
+}
+div.vertical-line{
+    width: 1px; /* Line width */
+    background-color: black; /* Line color */
+    height: 100%; /* Override in-line if you want specific height. */
+    float: right; /* Causes the line to float to left of content. 
+      You can instead use position:absolute or display:inline-block
+      if this fits better with your design */
+  }
+.search-route-button:hover{
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.2), 0 2px 15px 0 rgba(0,0,0,.2);
+    
+}
+.result-header:first-child{
+    margin-top: 100px;
+    background-color: #34495e !important;
+}
+.result-header{
+    background-color: #3ecdb5 !important;
+}
+.result-header.a{
+    margin-top: 0px;
+}
+.search-container{
+    margin-top:200px;
+    margin-left: 80px;
+}
+.search-input{
+    margin-top: 10px;
+}
+#PlacesAutocomplete__autocomplete-container{
+    z-index: 1000 !important;
+}
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+ }
+ .result-header{
+     background: rgb(91, 76, 228);
+     -webkit-animation: move 0.5s;         
+ }
+ .header-cell{
+     padding: 10px;
+     color:white;
+ }
+ .center{
+     text-align: center;
+ }
+ .header-cell p{
+     margin-top:10px;
+ }
+ .result-container{
+    background: white;
+    cursor: pointer;
+    -webkit-animation: move 0.5s;    
+}
+.result-container:nth-child(odd){
+    background-color: #e3e7e8;
+}
+.result-container:nth-child(even){
+    background-color:#ecf0f1;
+}
+@-webkit-keyframes move{
+    0%{top:500px}
+    100%{top:0px}
+}
+.result-container:hover{
+    z-index: 1;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.2), 0 2px 15px 0 rgba(0,0,0,.2);    
+}
+ .company-logo{
+     padding: 10px;
+     height: 100px;
+     width: 100px;
+ }
+ .result-date{
+     margin-top: 40px;
+     text-align: center;
+ }
+ .ticket-info{
+     margin-top: 60px;
+ }
+ .pay-now{
+     padding: 10px; 
+     box-shadow: 0 2px 10px 0 rgba(0,0,0,.06), 0 2px 15px 0 rgba(0,0,0,.06);
+     border-radius: 2px;
+     background: rgb(37, 226, 37);
+     cursor: pointer;  
+     text-align: center;
+ }
+ .header-cell.route{
+     display: flex;
+     justify-content: space-between;
+ }
+ .filter{
+     font-size: 2em;
+     margin-top: 5px;
+ }
+ .destination{
+     background-color: white;
+     padding: 0px 15px;
+     border-radius: 8px;
+     color:black;
+ }
+ .close{
+     font-size: 2em;
+ }
+ .ticket{
+    height: 100%;
+    width: 100%;
+ }
+ .message{
+     z-index: 20000000;
+     position: absolute;
+     top:150px;
+     left: 320px;
+     background-color: white;
+     color:white;
+     padding: 20px;
+     border-radius:10px;
+     -webkit-animation: move-up 0.5s;
+ }
+ .search-input input{
+     border-radius: 10px;
+     outline:0;
+     box-shadow: inset 0px 0px 0px 0px red !important;
+}
+ @-webkit-keyframes move-up{
+    0%{top:0px}
+    100%{top:200px}
+}

@@ -1,0 +1,75 @@
+.md-input{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.md-input label{
+    position: absolute;
+    top: 2px;
+    left: 0;
+    font-weight: normal;
+    opacity: 0.7;
+    height: 100%;
+    font-size: 1.5rem;
+    cursor: text;
+    text-align: initial;
+    pointer-events: none;
+    transition: all .2s ease-out;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+}
+
+.md-input label.active{
+    -webkit-transform: translateY(-14px) scale(0.8);
+    transform: translateY(-14px) scale(0.8);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    opacity: 1;
+}
+.md-input input, .md-input textarea{
+    transition: all 0.3s;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    border-radius: 0;
+    outline: none;
+    width: 100%;
+    font-size: 1.5rem;
+}
+.md-input input{
+    height: 4.5rem;
+}
+.md-input input:focus, .md-input textarea:focus{
+    border-bottom: 1px solid orangered;
+    -webkit-box-shadow: 0 1px 0 0 orangered;
+    box-shadow: 0 1px 0 0 orangered;
+}
+.md-input input:focus+label, .md-input textarea:focus+label{
+    color: orangered;
+}
+.md-input input.prefix, .md-input label.prefix{
+    margin-left: 2.15rem;
+}
+.md-input span.prefix{
+    position: absolute;
+    width: 2rem;
+    font-size: 1.5rem;
+    bottom: 0.75rem;
+    -webkit-transition: color .2s;
+    transition: color .2s;
+}
+.md-input span.prefix.active{
+    color: orangered;
+}
+.md-input span.validation-text{
+    display: block;
+    margin-top: 2px;
+}
+.md-input span.validation-text.valid{
+    color: limegreen;
+}
+.md-input span.validation-text.invalid{
+    color: red;
+}
